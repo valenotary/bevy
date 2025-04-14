@@ -35,6 +35,8 @@ multi_threaded = ["bevy_tasks/multi_threaded"]
 shader_format_glsl = ["naga/glsl-in", "naga/wgsl-out", "naga_oil/glsl"]
 shader_format_spirv = ["wgpu/spirv", "naga/spv-in", "naga/spv-out"]
 shader_format_wesl = ["wesl"]
+# TODO: currently we rely on Slang to be installed on the system (available on PATH) rather than provided as a crate dependency
+shader_format_slang = []
 
 # Enable SPIR-V shader passthrough
 spirv_shader_passthrough = ["wgpu/spirv"]
